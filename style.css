@@ -38,7 +38,7 @@ body {
   /* justify-self: right; */
   padding: 0;
   /* margin-right: auto; */
-  font-size: 16px;
+  font-size: 1.0rem;
   align-self: center;
   color: #04211195;
   margin: 0 0px;
@@ -51,27 +51,30 @@ body {
   justify-content: space-between;
   /* border: 1px solid red; */
   align-items: center;
+  flex-shrink: 1;
 }
 
 .search-bar button {
   position: relative;
-  right: -18%;
+  right: -16%;
   background: none;
   border: none;
-  font-size: 24px;
   cursor: pointer;
-  scale: 0.8;
+  scale: 1.4;
 }
 
 .nav-bar {
   display: flex;
+  width:auto;
   height: 100%;
+  /* border: 1px solid red; */
   font-family: inherit;
   font-size: 0.9rem;
 }
 
 .nav-bar a {
   height: 100%;
+  align-self: center;
   text-decoration: none;
   text-transform: none;
   color: #042111;
@@ -347,8 +350,17 @@ body {
         /* background-color: red; */
         display: none !important;
     }
-    .search-bar{
-        margin-right: auto;
-
+}
+@media (max-width : 400px){
+    .title{
+        /* background-color: red; */
+        font-size: 0.8rem;
+    }
+    .nav-bar a {
+        font-size: 0.7rem;
+    }
+    .search-icon {
+        scale: .8;
+        font-size: 1.1;
     }
 }
