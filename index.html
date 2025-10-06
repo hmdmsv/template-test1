@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="hamburger-menu">
+            <button class="hamburger-btn" onclick="toggleMenu()">☰</button>
+            <ul class="menu-items">
+                <li><a href="#1">خانه</a></li>
+                <li><a href="#2">تمرینات</a></li>
+                <li><a href="#3">تنظیمات</a></li>
+                <li><a href="#4">درباره ما</a></li>
+            </ul>
+            <div class="title">
+                مدرسه موش ها
+            </div>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" image="search-icon.png" placeholder="جستجو...">
+            <button class="search-icon">
+                🔍
+            </button>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <a href="#1" class="nav-item1">پنل</a>
+                |<a href="#2" class="nav-item2">عضویت</a>
+                |<a href="#3" class="nav-item3">...</a>
+            </ul>
+        </nav>
+    </header>
+    <div class="circle-menu">
+        <div class="center-circle">ریاضی</div>
+        <div class="orbit">
+            <button class="orbit-item" onclick="selectItem(this)">جمع</button>
+            <div class="orbit-item" onclick="selectItem(this)">تفریق</div>
+            <div class="orbit-item" onclick="selectItem(this)">ضرب</div>
+            <div class="orbit-item" onclick="selectItem(this)">تقسیم</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
