@@ -41,7 +41,7 @@ body {
   font-size: 16px;
   align-self: center;
   color: #04211195;
-  margin: 0 20px;
+  margin: 0 0px;
   font-weight: 500;
   text-shadow: 0 0 3px #04211190;
 }
@@ -49,6 +49,7 @@ body {
   position: relative;
   display: flex;
   justify-content: space-between;
+  /* border: 1px solid red; */
   align-items: center;
 }
 
@@ -59,6 +60,7 @@ body {
   border: none;
   font-size: 24px;
   cursor: pointer;
+  scale: 0.8;
 }
 
 .nav-bar {
@@ -194,10 +196,11 @@ body {
   flex-direction: row;
   position: relative;
   /* position:relative; */
-  justify-self: flex-start;
+  justify-content: center;
   width: 300px;
   height: 300px;
-  margin: 60px auto;
+  margin-block: 60px auto;
+  margin-right: 150px;
   /* border: 1px solid #333; */
 }
 
@@ -337,4 +340,15 @@ body {
 }
 .orbit-item:nth-child(4) {
   animation-delay: 0.9s;
+}
+
+@media (max-width : 600px){
+    .search-bar input{
+        /* background-color: red; */
+        display: none !important;
+    }
+    .search-bar{
+        margin-right: auto;
+
+    }
 }
