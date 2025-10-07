@@ -46,17 +46,19 @@ body {
   text-shadow: 0 0 3px #04211190;
 }
 .search-bar {
-  position: relative;
+  /* position: relative; */
   display: flex;
-  justify-content: space-between;
+  width: 120px;
+  justify-content:right;  
   /* border: 1px solid red; */
   align-items: center;
   flex-shrink: 1;
+  margin: 0;
 }
 
 .search-bar button {
   position: relative;
-  right: -16%;
+  right: -25%;
   background: none;
   border: none;
   cursor: pointer;
@@ -95,14 +97,15 @@ body {
   font-size: 14px;
   border: #04211190 solid 1px;
   box-shadow: 0 0 3px #04211190;
-  border-radius: 20px;
+  border-radius: 16px;
   /* outline: none; */
   font-family: "Vazirmatn", sans-serif;
-  width: 150px;
+  width: 120px;
   height: auto;
   margin: 0;
   transition: width 0.3s ease;
   opacity: 1;
+  padding-left: 4ch;
   /* pointer-events: none; */
 }
 
