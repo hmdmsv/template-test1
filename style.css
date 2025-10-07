@@ -21,7 +21,7 @@ body {
   } */
 
 .header {
-  font-family: 'Vazirmatn', sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   display: flex;
   position: fixed;
   justify-content: space-between;
@@ -34,7 +34,7 @@ body {
 }
 
 .title {
-  font-family: 'Vazirmatn', sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   /* justify-self: right; */
   padding: 0;
   /* margin-right: auto; */
@@ -97,7 +97,7 @@ body {
   box-shadow: 0 0 3px #04211190;
   border-radius: 20px;
   /* outline: none; */
-  font-family: 'Vazirmatn', sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   width: 150px;
   height: auto;
   margin: 0;
@@ -149,7 +149,7 @@ body {
   padding: 12px 16px;
   text-decoration: none;
   color: #042111;
-  font-family: 'Vazirmatn', sans-serif;
+  font-family: "Vazirmatn", sans-serif;
 }
 
 .menu-items li a:hover {
@@ -168,7 +168,7 @@ body {
   } */
 
 .menu-items li:not(:last-child)::after {
-  content: '';
+  content: "";
   display: block;
   height: 2px;
   background-color: white;
@@ -219,7 +219,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Vazirmatn', sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 18px;
   color: #333;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -249,7 +249,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Vazirmatn', sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 14px;
   color: #333;
   border: 2px solid white;
@@ -287,28 +287,39 @@ body {
   transform: rotate(240deg) scale(0.5);
   opacity: 0;
 }
-
-/* .graph {
+#gr {
   display: flex;
-  position: relative;
+  position: absolute;
   top: 100px;
   left: 100px;
   align-items: center;
   justify-items: center;
-} */
-.item {
+  /* border: 1px solid red; */
+}
+
+#gr1 {
+  /* display: flex; */
+  position: absolute;
+  top: 400px;
+  left: 00px;
+  align-items: center;
+  justify-items: center;
+  /* border: 1px solid blue; */
+}
+
+.item,
+.item1 {
   display: flex;
-  position: relative;
+  position: absolute;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  font-family: 'Vazirmatn', sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 0.8rem;
   color: #042111;
-  position: absolute;
-  /* transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%);
   background: linear-gradient(135deg, #c1ffd7, #a0e7e5);
   border: 2px solid white;
 }
@@ -350,28 +361,47 @@ body {
 }
 
 .orbit-item,
-.item {
+.item,
+.item1 {
   /* transform-origin: center, center; */
   animation: pulse 1.2s ease-in-out infinite;
 }
 
 /* ترتیب تأخیر برای هر آیتم */
 .orbit-item:nth-child(1),
-.item:nth-child(1) {
+.item:nth-child(1),
+.item:nth-child(5), 
+.item1:nth-child(1),
+.item1:nth-child(5) {
   animation-delay: 0s;
 }
 .orbit-item:nth-child(2),
-.item:nth-child(2) {
+.item:nth-child(2),
+.item:nth-child(6),
+.item1:nth-child(2),
+.item1:nth-child(6) {
   animation-delay: 0.3s;
 }
 .orbit-item:nth-child(3),
-.item:nth-child(3) {
+.item:nth-child(3),
+.item:nth-child(7),
+.item1:nth-child(3),
+.item1:nth-child(7) {
   animation-delay: 0.6s;
 }
 .orbit-item:nth-child(4),
-.item:nth-child(4) {
+.item:nth-child(4),
+.item:nth-child(8),
+.item1:nth-child(4),
+.item1:nth-child(8) {
   animation-delay: 0.9s;
 }
+
+/* #curve2{
+  position: absolute;
+  top: 100px;
+  left: 50px
+} */
 
 @media (max-width: 600px) {
   .search-bar input {
