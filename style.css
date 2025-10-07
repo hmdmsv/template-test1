@@ -48,12 +48,13 @@ body {
 .search-bar {
   /* position: relative; */
   display: flex;
-  width: 120px;
+  position: absolute;
+  right:40px;
+  max-width: 120px;
   justify-content:right;  
   /* border: 1px solid red; */
   align-items: center;
-  flex-shrink: 1;
-  margin: 0;
+flex: 1 1 auto;
 }
 
 .search-bar button {
@@ -72,6 +73,8 @@ body {
   /* border: 1px solid red; */
   font-family: inherit;
   font-size: 0.9rem;
+  flex-shrink: 0;
+  margin-right: auto;
 }
 
 .nav-bar a {
@@ -94,18 +97,19 @@ body {
   /* right: 40px; */
   position: relative;
   padding: 5px 15px;
-  font-size: 14px;
+  font-size: 0.8rem;
   border: #04211190 solid 1px;
   box-shadow: 0 0 3px #04211190;
   border-radius: 16px;
   /* outline: none; */
   font-family: "Vazirmatn", sans-serif;
-  width: 120px;
+  width: inherit;
   height: auto;
   margin: 0;
   transition: width 0.3s ease;
   opacity: 1;
   padding-left: 4ch;
+  flex: 1 1 auto;
   /* pointer-events: none; */
 }
 
@@ -116,10 +120,12 @@ body {
 
 .hamburger-btn {
   font-size: 28px;
+  width: fit-content;
   background: none;
   border: none;
   cursor: pointer;
   padding-block: 5px;
+  flex-shrink: 1;
 }
 
 .menu-items {
@@ -442,5 +448,9 @@ body {
   .search-icon {
     scale: 0.8;
     font-size: 1.1;
+  }
+  .search-bar input {
+    font-size: 0.7rem;
+    width: 70%;
   }
 }
