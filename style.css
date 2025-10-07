@@ -425,7 +425,7 @@ body {
 @media (max-width: 600px) {
   .search-bar input {
     /* background-color: red; */
-    display: none !important;
+    /* display: none !important; */
   }
 }
 @media (max-width: 400px) {
