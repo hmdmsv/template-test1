@@ -36,7 +36,7 @@ const svgRect = path.ownerSVGElement.getBoundingClientRect();
 
 items.forEach((item, i) => {
   const point = path.getPointAtLength(((i + 0.5) * totalLength) / count);
-  item.style.left = `${point.x + svgRect.left}px`;
+  item.style.left = `${point.x + svgRect.left + 75}px`;
   item.style.top = `${point.y + svgRect.top}px`;
 });
 
@@ -44,6 +44,6 @@ const svgRect1 = path1.ownerSVGElement.getBoundingClientRect();
 
 items1.forEach((item1, i) => {
   const point1 = path1.getPointAtLength(((i + 0.5) * totalLength1) / count1);
-  item1.style.left = `${point1.x + svgRect1.left}px`;
+  item1.style.left = `${point1.x + svgRect1.left + 75}px`;
   item1.style.top = `${point1.y + svgRect1.top}px`;
 });

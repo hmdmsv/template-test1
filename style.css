@@ -207,7 +207,7 @@ body {
   /* border: 1px solid #333; */
 }
 
-.center-circle {
+.center-circle{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -225,6 +225,11 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   z-index: -1;
 }
+
+#ccenter1{
+  background: radial-gradient(circle, #87fbe8, #acb7e5);
+}
+
 
 .orbit {
   display: flex;
@@ -291,7 +296,7 @@ body {
   display: flex;
   position: absolute;
   top: 100px;
-  left: 100px;
+  left: 125px;
   align-items: center;
   justify-items: center;
   /* border: 1px solid red; */
@@ -300,8 +305,8 @@ body {
 #gr1 {
   /* display: flex; */
   position: absolute;
-  top: 400px;
-  left: 00px;
+  top: 396px;
+  left: 125px;
   align-items: center;
   justify-items: center;
   /* border: 1px solid blue; */
@@ -364,7 +369,7 @@ body {
 .item,
 .item1 {
   /* transform-origin: center, center; */
-  animation: pulse 1.2s ease-in-out infinite;
+  animation: pulse 1.8s ease-in-out infinite;
 }
 
 /* ترتیب تأخیر برای هر آیتم */
@@ -395,6 +400,20 @@ body {
 .item1:nth-child(4),
 .item1:nth-child(8) {
   animation-delay: 0.9s;
+}
+
+.item:nth-child(5),
+.item:nth-child(9),
+.item1:nth-child(5),
+.item1:nth-child(9) {
+  animation-delay: 1.2s;
+}
+
+.item:nth-child(6),
+.item:nth-child(10),
+.item1:nth-child(6),
+.item1:nth-child(10) {
+  animation-delay: 1.5s;
 }
 
 /* #curve2{
