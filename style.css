@@ -60,7 +60,7 @@ body {
 
 .search-bar button {
   position: relative;
-  right: -25%;
+  right: -4ch;
   background: none;
   border: none;
   cursor: pointer;
@@ -122,11 +122,12 @@ body {
 .hamburger-btn {
   display: inline-block;
   font-size: 28px;
-  width: fit-content;
+  width: min-content;
   background: none;
   border: none;
   cursor: pointer;
   padding-block: 5px;
+  padding-inline: 3px;
   flex-shrink: 1;
 }
 
