@@ -48,13 +48,14 @@ body {
 .search-bar {
   /* position: relative; */
   display: flex;
-  position: absolute;
-  right:40px;
+  position: relative;
+  margin-left: auto;
   max-width: 120px;
-  justify-content:right;  
+  justify-content:right;
+  align-items: center;  
   /* border: 1px solid red; */
   align-items: center;
-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .search-bar button {
@@ -103,7 +104,7 @@ flex: 1 1 auto;
   border-radius: 16px;
   /* outline: none; */
   font-family: "Vazirmatn", sans-serif;
-  width: inherit;
+  width: 22ch;
   height: auto;
   margin: 0;
   transition: width 0.3s ease;
@@ -119,6 +120,7 @@ flex: 1 1 auto;
 }
 
 .hamburger-btn {
+  display: inline-block;
   font-size: 28px;
   width: fit-content;
   background: none;
@@ -451,6 +453,6 @@ flex: 1 1 auto;
   }
   .search-bar input {
     font-size: 0.7rem;
-    width: 70%;
+    width: 15ch;
   }
 }
