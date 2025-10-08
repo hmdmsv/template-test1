@@ -310,7 +310,7 @@ body {
   display: flex;
   position: absolute;
   top: 100px;
-  left: 50px;
+  left: 40px;
   align-items: center;
   justify-items: center;
   /* border: 1px solid red; */
@@ -320,7 +320,7 @@ body {
   /* display: flex; */
   position: absolute;
   top: 400px;
-  left: 50px;
+  left: 40px;
   align-items: center;
   justify-items: center;
   /* border: 1px solid blue; */
@@ -330,8 +330,12 @@ body {
 .item1 {
   display: flex;
   position: absolute;
-  width: 50px;
-  height: 50px;
+  padding: 1ch;
+  flex-wrap:wrap ;
+  text-align: center;
+  max-width: 50px;
+  width: fit-content;
+  aspect-ratio: 1/1;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
@@ -340,7 +344,12 @@ body {
   color: #042111;
   transform: translate(-50%, -50%);
   background: linear-gradient(135deg, #c1ffd7, #a0e7e5);
-  border: 2px solid white;
+  border: 1px solid white;
+}
+
+.underlined {
+  font-weight: 900;
+  font-size: 1rem;
 }
 
 @keyframes rotateOrbit {
