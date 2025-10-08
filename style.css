@@ -60,7 +60,7 @@ body {
 
 .search-bar button {
   position: relative;
-  right: -4ch;
+  padding-inline-start: 1ch;
   background: none;
   border: none;
   cursor: pointer;
