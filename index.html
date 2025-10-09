@@ -1,40 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
 
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="hamburger-menu">
-            <button class="hamburger-btn" onclick="toggleMenu()">☰</button>
-            <ul class="menu-items">
-                <li><a href="#1">خانه</a></li>
-                <li><a href="#2">تمرینات</a></li>
-                <li><a href="#3">تنظیمات</a></li>
-                <li><a href="#4">درباره ما</a></li>
-            </ul>
-            <!-- <div class="title">مدرسه موش ها</div> -->
-        </div>
+      <!-- <div class="hamburger-menu"> -->
+      <button class="hamburger-btn" onclick="toggleMenu()">☰</button>
+      <ul class="menu-items">
+        <li><a href="#1">خانه</a></li>
+        <li><a href="#2">تمرینات</a></li>
+        <li><a href="#3">تنظیمات</a></li>
+        <li><a href="#4">درباره ما</a></li>
+      </ul>
+      <!-- <div class="title">مدرسه موش ها</div> -->
+      <!-- </div> -->
 
-        <div class="search-bar">
-            <input type="text" image="search-icon.png" placeholder="جستجو..." />
-            <button class="search-icon">🔍</button>
-        </div>
-        <nav class="nav-bar">
-            <a href="#1" class="nav-item1">پنل</a>
-            |<a href="#2" class="nav-item2">عضویت</a> |<a href="#3" class="nav-item3">...</a>
-        </nav>
+      <div class="search-bar">
+        <input type="text" image="search-icon.png" placeholder="جستجو..." />
+        <button class="search-icon">🔍</button>
+      </div>
+      <nav class="nav-bar">
+        <a href="#1" class="nav-item1">پنل</a>
+        |<a href="#2" class="nav-item2">عضویت</a> |<a
+          href="#3"
+          class="nav-item3"
+          >...</a
+        >
+      </nav>
     </header>
     <!-- <svg width="100" height="150" viewbox="100 100 100 150"  style="border: 1px solid black;" id="curve2" >
         <path d="m100,100 a75,75 0 0,1 0,150, a75,75 0 0, 0, 0,150 " stroke="blue" fill="none" />
@@ -49,17 +64,17 @@
         </div>
     </div> -->
     <div class="graph">
-        <svg width="338" height="308" viewBox="-119 0 338 308" id="gr">
-            <path
-              d="m0,4 h140 a75,75 0 0,1 0,150 h-180 a75,75 0 0,0 0,150 h40"
-              stroke="#acb7e5"
-              stroke-width="8"
-              fill="none"
-              shape-rendering="geometricPrecision"
-              id="curve" 
-            />
+      <svg width="338" height="308" viewBox="-119 0 338 308" id="gr">
+        <path
+          d="m0,4 h140 a75,75 0 0,1 0,150 h-180 a75,75 0 0,0 0,150 h40"
+          stroke="#acb7e5"
+          stroke-width="8"
+          fill="none"
+          shape-rendering="geometricPrecision"
+          id="curve"
+        />
 
-            <!-- <defs>
+        <!-- <defs>
                 <radialGradient id="myGradient" cx="50%" cy="50%" r="50%">
                   <stop offset="30%" stop-color="#87fbe8" />
                   <stop offset="100%" stop-color="#acb7e5" />
@@ -67,44 +82,41 @@
               </defs>
             
             <circle cx="75" cy="75" r="75" fill="url(#myGradient)" stroke="white" /> -->
-        </svg>
-        <div class="item">اعداد<span class="underlined">۹ - ۱</span></div>
-        <div class="item">عدد صفر<span class="underlined">۰</span></div>
-        <div class="item">عدد ده &nbsp<span class="underlined">۱۰</span></div>
-        <div class="item">دسته بندی اعداد</div>
-        <div class="item">چوب خط</div>
-        <div class="item">محور اعداد</div>
-        <div class="item">اعداد دورقمی</div>
-        <div class="item">یکان و دهگان</div>
-        <!-- <div class="item">جدول</div> -->
-        
+      </svg>
+      <div class="item">اعداد<span class="underlined">۹ - ۱</span></div>
+      <div class="item">عدد صفر<span class="underlined">۰</span></div>
+      <div class="item">عدد ده &nbsp<span class="underlined">۱۰</span></div>
+      <div class="item">دسته بندی اعداد</div>
+      <div class="item">چوب خط</div>
+      <div class="item">محور اعداد</div>
+      <div class="item">اعداد دورقمی</div>
+      <div class="item">یکان و دهگان</div>
+      <!-- <div class="item">جدول</div> -->
     </div>
     <div class="graph1">
-        <svg width="338" height="308" viewBox="-119 0 338 308" id="gr1">
-            <path
-            d="m0,4 h140 a75,75 0 0,1 0,150 h-180 a75,75 0 0,0 0,150 h40"
-            stroke="#acb7e5"
-            stroke-width="8"
-            fill="none"
-            shape-rendering="geometricPrecision"
-            id="curve1" 
-            />
-        </svg>
-        
-        <div class="item1">جمع یک رقمی</div>
-        <div class="item1"> جدول جمع یک رقمی</div>
-        <div class="item1">تفریق یک رقمی</div>
-        <div class="item1">اعداد<span class="underlined">۱۰۰ - ۱</span></div>
-        <div class="item1">جمع اعداد دورقمی</div>
-        <div class="item1">جدول جمع دورقمی</div>
-        <div class="item1">تفریق اعداد دورقمی</div>
-        <div class="item1">جدول تفریق دورقمی</div>
-        <!-- <div class="item1">جدول</div>
+      <svg width="338" height="308" viewBox="-119 0 338 308" id="gr1">
+        <path
+          d="m0,4 h140 a75,75 0 0,1 0,150 h-180 a75,75 0 0,0 0,150 h40"
+          stroke="#acb7e5"
+          stroke-width="8"
+          fill="none"
+          shape-rendering="geometricPrecision"
+          id="curve1"
+        />
+      </svg>
+
+      <div class="item1">جمع یک رقمی</div>
+      <div class="item1">جدول جمع یک رقمی</div>
+      <div class="item1">تفریق یک رقمی</div>
+      <div class="item1">اعداد<span class="underlined">۱۰۰ - ۱</span></div>
+      <div class="item1">جمع اعداد دورقمی</div>
+      <div class="item1">جدول جمع دورقمی</div>
+      <div class="item1">تفریق اعداد دورقمی</div>
+      <div class="item1">جدول تفریق دورقمی</div>
+      <!-- <div class="item1">جدول</div>
         <div class="item1">محور</div> -->
     </div>
 
-
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

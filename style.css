@@ -1,11 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  display: flex;
+  /* display: flex; */
   direction: rtl;
   min-height: 100vh;
   height: auto;
   background-color: #fefefe;
+  box-sizing: border-box;
 }
 
 /* .gradient-box {
@@ -25,10 +26,10 @@ body {
   font-family: "Vazirmatn", sans-serif;
   display: flex;
   position: fixed;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   width: 100%;
-  height: auto;
+  height: 35px;
   margin-bottom: 5px;
   background: linear-gradient(to right, #fefefe, #e0e0e0, #fefefe);
   z-index: 1000;
@@ -49,40 +50,71 @@ body {
 .search-bar {
   /* position: relative; */
   display: flex;
-  position: relative;
-  margin-left: auto;
-  max-width: 120px;
-  justify-content:right;
+  height: 100%;
+  /* position: relative; */
+  /* margin-left: auto; */
+  /* max-width: 120px; */
+  /* justify-content:right; */
   align-items: center;  
-  /* border: 1px solid red; */
+  border: 1px solid red;
   align-items: center;
-  flex: 1 1 auto;
+  flex: auto;
+  transition: all 0.3s ease;
+
+}
+
+.search-bar input {
+  /* right: 40px; */
+  /* position: relative; */
+  padding: 5px 10px;
+  font-size: 0.7rem;
+  border: #04211190 solid 1px;
+  box-shadow: 0 0 3px #04211190;
+  border-radius: 16px;
+  /* outline: none; */
+  font-family: "Vazirmatn", sans-serif;
+  max-width: 250px;
+  min-width: 20px;
+  height: auto;
+  margin: 0;
+  transition: all 0.3s ease;
+  opacity: 1;
+  /* padding-left: 4ch; */
+  flex: auto;
+  /* pointer-events: none; */
 }
 
 .search-bar button {
-  position: relative;
+  /* position: relative; */
+  box-sizing: border-box;
+  scale: 1.4;
+  height: 20px;
+  padding: 0;
   padding-inline-start: 1ch;
   background: none;
   border: none;
   cursor: pointer;
-  scale: 1.4;
+  /* scale: 1.4; */
+  border: 1px solid red;
 }
 
 .nav-bar {
   display: flex;
-  width: auto;
   height: 100%;
+  align-items: center;
   /* border: 1px solid red; */
   font-family: inherit;
   font-size: 0.9rem;
   flex-shrink: 0;
   margin-right: auto;
-  margin-inline-end: 1ch;
+  /* margin-inline-end: 1ch; */
 }
 
 .nav-bar a {
   height: 100%;
-  align-self: center;
+  /* align-self: center; */
+  justify-content: center;
+  align-content: center;
   text-decoration: none;
   text-transform: none;
   color: #042111;
@@ -96,41 +128,23 @@ body {
   transition: background 0.5s ease;
 }
 
-.search-bar input {
-  /* right: 40px; */
-  position: relative;
-  padding: 5px 15px;
-  font-size: 0.8rem;
-  border: #04211190 solid 1px;
-  box-shadow: 0 0 3px #04211190;
-  border-radius: 16px;
-  /* outline: none; */
-  font-family: "Vazirmatn", sans-serif;
-  width: 22ch;
-  height: auto;
-  margin: 0;
-  transition: width 0.3s ease;
-  opacity: 1;
-  padding-left: 4ch;
-  flex: 1 1 auto;
-  /* pointer-events: none; */
-}
 
-.hamburger-menu {
+/* .hamburger-menu {
   display: flex;
   position: relative;
-}
+} */
 
 .hamburger-btn {
-  display: inline-block;
-  font-size: 28px;
-  width: min-content;
+  display: flex;
+  height: 100%;
+  font-size: 16px;
+  /* width: min-content; */
   background: none;
   border: none;
   cursor: pointer;
   padding-block: 5px;
   padding-inline: 3px;
-  flex-shrink: 1;
+  /* border: 1px solid red; */
 }
 
 .menu-items {
@@ -463,8 +477,8 @@ body {
     scale: 0.8;
     font-size: 1.1;
   }
-  .search-bar input {
+  /* .search-bar input {
     font-size: 0.7rem;
     width: 15ch;
-  }
+  } */
 }
